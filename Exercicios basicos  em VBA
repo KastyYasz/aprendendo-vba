@@ -1,0 +1,148 @@
+Sub exercicio_2()
+
+
+Dim valor1 As Double
+Dim valor2 As Double
+Dim valor3 As Double
+Dim valor4 As Double
+
+Dim media As Double
+
+Range("A1").Value = "valor(1):"
+Range("A2").Value = "valor(2):"
+Range("A3").Value = "valor(3):"
+Range("A4").Value = "valor(4):"
+Range("A5").Value = "Média Ponderada:"
+
+
+valor1 = Range("B1").Value
+valor2 = Range("B2").Value
+valor3 = Range("B3").Value
+valor4 = Range("B4").Value
+
+
+
+
+media = (valor1 + valor2 + valor3 + valor4) / 4
+
+
+
+Range("B5").Value = media
+
+End Sub
+
+Sub limpa()
+
+Range("B1:B4").ClearContents
+
+End Sub
+
+Sub excercicio1()
+
+
+Dim num1 As Integer
+Dim num2 As Integer
+Dim mult As Integer
+
+
+Range("A10").Value = "Número 1:"
+Range("A11").Value = "Número 2:"
+Range("A12").Value = "Resultado:"
+
+
+
+num1 = Range("B10").Value
+num2 = Range("B11").Value
+
+
+mult = num1 * num2
+
+
+Range("B12").Value = mult
+
+
+End Sub
+
+
+
+Sub exercicio3()
+
+
+Dim num1 As Integer
+Dim num2 As Integer
+Dim sucessor As Integer
+Dim antecessor As Integer
+
+
+Range("A17").Value = "Número:"
+Range("A18").Value = "Sucessor:"
+Range("A19").Value = "Antecessor:"
+
+num1 = Range("B17").Value
+
+
+sucessor = num1 + 1
+
+antecessor = num1 - 1
+
+
+Range("B18").Value = sucessor
+Range("B19").Value = antecessor
+
+
+
+
+
+End Sub
+
+
+Sub limpamult()
+
+Range("B10:B11").ClearContents
+
+End Sub
+
+Sub limpasucessor()
+
+Range("B17:B11").ClearContents
+
+End Sub
+
+Sub CalculaMP()
+    Dim valor1 As Double, valor2 As Double, valor3 As Double, valor4 As Double
+    Dim peso1 As Double, peso2 As Double, peso3 As Double, peso4 As Double
+    Dim media As Double
+
+    peso1 = 1
+    peso2 = 2
+    peso3 = 3
+    peso4 = 4
+
+
+    
+    Range("A26").Value = "Nota(1):"
+    Range("A27").Value = "Nota(2):"
+    Range("A28").Value = "Nota(3):"
+    Range("A29").Value = "Nota(4):"
+    Range("A30").Value = "Media:"
+
+    
+    valor1 = Range("B26").Value
+    valor2 = Range("B27").Value
+    valor3 = Range("B28").Value
+    valor4 = Range("B29").Value
+
+    
+    media = ((valor1 * peso1) + (valor2 * peso2) + (valor3 * peso3) + (valor4 * peso4)) / (peso1 + peso2 + peso3 + peso4)
+
+    
+    Range("B30").Value = media
+End Sub
+
+
+Sub limpaMP()
+
+Range("B26:B29").ClearContents
+
+End Sub
+
